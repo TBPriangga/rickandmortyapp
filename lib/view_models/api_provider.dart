@@ -28,4 +28,11 @@ class ApiProvider with ChangeNotifier {
     }
     return episodes;
   }
+
+  Future<List<Character>> getCharacter(String name) async {
+    final result =
+        await http.get(Uri.https(url, "/api/character", {'name': name}));
+    final response = characterModelFromJson(result.body);
+    return response.results!;
+  }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:rickandmortyapp/view_models/api_provider.dart';
+import 'package:rickandmortyapp/widgets/search.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -47,6 +48,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           centerTitle: true,
+          actions: [
+            IconButton(
+                onPressed: () {
+                  showSearch(context: context, delegate: SearchCharacter());
+                },
+                icon: Icon(Icons.search)),
+          ],
         ),
         body: SizedBox(
           height: double.infinity,
