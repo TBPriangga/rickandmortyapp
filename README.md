@@ -18,7 +18,6 @@ Project ini dibuat untuk memenuhi Take Home Challenge dari BIGIO, Menggunakan AP
 
 
 ## <a name="libraries"></a> Libraries :
-You may list what libraries you used in this project, example :
 - Flutter (3.16.7)
 - Provider as State Management
 - http as API Client
