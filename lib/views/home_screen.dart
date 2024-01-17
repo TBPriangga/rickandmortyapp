@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   showSearch(context: context, delegate: SearchCharacter());
                 },
-                icon: Icon(Icons.search)),
+                icon: const Icon(Icons.search)),
           ],
         ),
         body: SizedBox(
@@ -88,7 +88,7 @@ class CharacterList extends StatelessWidget {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 0.87,
+        childAspectRatio: 0.75,
         mainAxisSpacing: 10,
         crossAxisSpacing: 10,
       ),
@@ -109,12 +109,20 @@ class CharacterList extends StatelessWidget {
                   Hero(
                     tag: character.id!,
                     child: FadeInImage(
-                      placeholder: AssetImage('assets/img/loading.gif'),
+                      placeholder: const AssetImage('assets/img/loading.gif'),
                       image: NetworkImage(character.image!),
                     ),
                   ),
                   Text(
                     character.name!,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      overflow: TextOverflow.ellipsis,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    character.species!,
                     style: const TextStyle(
                       fontSize: 16,
                       overflow: TextOverflow.ellipsis,

@@ -35,13 +35,24 @@ class CharacterScreen extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               height: size.height * 0.14,
               width: double.infinity,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+              child: Column(
                 children: [
-                  cardData("Status", character.status!),
-                  cardData("Species", character.species!),
-                  cardData("Origin", character.origin!.name!),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      cardData("Status", character.status!),
+                      cardData("Species", character.species!),
+                    ],
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      cardData("Origin", character.origin!.name!),
+                      cardData("Location", character.location!.name!),
+                    ],
+                  ),
                 ],
               ),
             ),

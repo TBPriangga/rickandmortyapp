@@ -8,7 +8,7 @@
 PRODUCT_NAME = rickandmortyapp
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.rickandmortyapp
+PRODUCT_BUNDLE_IDENTIFIER = com.takehomechallenge.priangga
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 com.takehomechallenge. All rights reserved.

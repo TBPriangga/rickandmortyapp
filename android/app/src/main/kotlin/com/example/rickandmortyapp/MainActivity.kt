@@ -1,4 +1,4 @@
-package com.example.rickandmortyapp
+package com.takehomechallenge.priangga
 
 import io.flutter.embedding.android.FlutterActivity
 

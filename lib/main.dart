@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import 'package:rickandmortyapp/screens/character_screen.dart';
-import 'package:rickandmortyapp/screens/home_screen.dart';
+import 'package:rickandmortyapp/views/character_screen.dart';
+import 'package:rickandmortyapp/views/home_screen.dart';
 
 import 'models/character_model.dart';
 import 'view_models/api_provider.dart';
